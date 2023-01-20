@@ -7,29 +7,27 @@
 
 import Foundation
 
+
 //Struct dos dados relacionados a Filmes
 struct Film: Codable {
-    let  title: String
+    let title: String
     let episodeId: Int
     let openingCrawl: String
-    let director: String
-    let releaseDate: String
+
     
     enum CodingKeys: String, CodingKey {
         case title
         case episodeId = "episode_id"
         case openingCrawl = "opening_crawl"
-        case director
-        case releaseDate = "release_date"
+
         
     }
     
-    init(title: String, episodeId: Int,openingCrawl: String,director: String, releaseDate: String ) {
+    init(title: String, episodeId: Int,openingCrawl: String) {
         self.title = title
         self.episodeId = episodeId
         self.openingCrawl = openingCrawl
-        self.director = director
-        self.releaseDate = releaseDate
+       
     }
 }
 

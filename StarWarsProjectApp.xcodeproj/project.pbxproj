@@ -20,6 +20,7 @@
 		6AADD1FD297897F9003D9982 /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AADD1FC297897F9003D9982 /* FilmsViewController.swift */; };
 		6AADD20129789845003D9982 /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AADD20029789845003D9982 /* FilmTableViewCell.swift */; };
 		6AADD2082978C811003D9982 /* FormatDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AADD2072978C811003D9982 /* FormatDate+Extension.swift */; };
+		6AADD20C297A0DBE003D9982 /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AADD20B297A0DBE003D9982 /* NetworkClientProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		6AADD1FC297897F9003D9982 /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
 		6AADD20029789845003D9982 /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
 		6AADD2072978C811003D9982 /* FormatDate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatDate+Extension.swift"; sourceTree = "<group>"; };
+		6AADD20B297A0DBE003D9982 /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				6AADD1FA29780329003D9982 /* NetWorkManager.swift */,
+				6AADD20B297A0DBE003D9982 /* NetworkClientProtocol.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				6AADD1DE2975FDDD003D9982 /* ViewController.swift in Sources */,
 				6AADD1F629775359003D9982 /* Category.swift in Sources */,
 				6AADD1FD297897F9003D9982 /* FilmsViewController.swift in Sources */,
+				6AADD20C297A0DBE003D9982 /* NetworkClientProtocol.swift in Sources */,
 				6AADD1FB29780329003D9982 /* NetWorkManager.swift in Sources */,
 				6AADD1F82977FFA8003D9982 /* APIResponse.swift in Sources */,
 				6AADD2082978C811003D9982 /* FormatDate+Extension.swift in Sources */,
