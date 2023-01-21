@@ -7,10 +7,10 @@
 
 import UIKit
 
+
 class PeopleViewController: UIViewController {
     
     let network = NetworkManager()
-    
     var people: [Person]? = [] {
         didSet {
             DispatchQueue.main.async {
@@ -25,17 +25,18 @@ class PeopleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(peopleTableView)
-        view.backgroundColor = UIColor(cgColor: .init(red: 1, green: 1, blue: 1, alpha: 1))
-        peopleTableView.backgroundColor = .clear
-        //Faz parte do Segundo passo:
-        //Informar ao TableView de contatos onde seus métodos de protocolo de fonte de dados são implementados, neste caso, contactsViewController e em outras palavras, self.
         peopleTableView.dataSource = self
         peopleTableView.delegate = self
+        //Faz parte do Segundo passo:
+        //Informar ao TableView de contatos onde seus métodos de protocolo de fonte de dados são implementados, neste caso, contactsViewController e em outras palavras, self.
+        
         //contactsTableView não sabe sobre esta célula. Vamos corrigi-lo registrando-o usando a string do identificador.
         // Acesse ViewDidLoad()no contactsViewControllere registre a célula no tableView.
         peopleTableView.register(PeopleTableViewCell.self, forCellReuseIdentifier: "peopleCell")
+        view.backgroundColor = UIColor(cgColor: .init(red: 1, green: 1, blue: 1, alpha: 1))
         setUpNavigation()
         applyContraints()
+        getDataPeople()
     }
     
     func applyContraints() {
@@ -59,7 +60,7 @@ class PeopleViewController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(cgColor: .init(red: 0, green: 0, blue: 0, alpha: 1))]
     }
     
-    func getDataFilm() {
+    func getDataPeople() {
         network.fetchPeople { (people) in
             self.people = people
         }
@@ -78,7 +79,7 @@ extension PeopleViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //faz o resuso de celula formatada em contactCell retornando uma celula formatada.
         let cell = tableView.dequeueReusableCell(withIdentifier: "peopleCell", for: indexPath) as! PeopleTableViewCell
-        cell.updateCell(with: people?[indexPath.row] ?? Person(name: "Erro"))
+        cell.updateCell(with: people?[indexPath.row] ?? Person(name: "Deu", hairColor: "Erro", skinColor: "Aqui", gender: "Gente!"))
         return cell
     }
 }

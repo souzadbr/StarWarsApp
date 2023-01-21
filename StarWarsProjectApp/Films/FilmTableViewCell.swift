@@ -53,8 +53,6 @@ final class FilmTableViewCell: UITableViewCell {
     func applyContraints() {
         //titlleLabel
         
-//        titlleLabel.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
-//        titlleLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant:  30).isActive = true
         titlleLabel.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 40).isActive = true
         titlleLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 30).isActive = true
         
