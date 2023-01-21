@@ -9,8 +9,7 @@ import UIKit
 
 final class FilmTableViewCell: UITableViewCell {
     
-   
-    
+
     //propriedade nameLAbel que é responsavel por mostrar o titulo no topo de cada célula.
     let titlleLabel: UILabel = {
         let label = UILabel()
@@ -38,7 +37,7 @@ final class FilmTableViewCell: UITableViewCell {
  
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        contentView.backgroundColor = .green
+        contentView.backgroundColor = .clear
 
         self.contentView.addSubview(titlleLabel)
         self.contentView.addSubview(episodeLabel)
@@ -54,22 +53,28 @@ final class FilmTableViewCell: UITableViewCell {
     func applyContraints() {
         //titlleLabel
         
-        titlleLabel.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
-        titlleLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant:  30).isActive = true
-    
+//        titlleLabel.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
+//        titlleLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant:  30).isActive = true
+        titlleLabel.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 40).isActive = true
+        titlleLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 30).isActive = true
+        
         //episodeLabel
-        episodeLabel.topAnchor.constraint(equalTo: self.titlleLabel.topAnchor, constant: 20).isActive = true
-        episodeLabel.leadingAnchor.constraint(equalTo: self.titlleLabel.leadingAnchor, constant: 120).isActive = true
+        episodeLabel.topAnchor.constraint(equalTo: self.titlleLabel.topAnchor, constant: 50).isActive = true
+        episodeLabel.leadingAnchor.constraint(equalTo: self.titlleLabel.leadingAnchor).isActive = true
         episodeLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
         
         //openingCrawlLabel
+        openingCrawlLabel.topAnchor.constraint(equalTo: self.episodeLabel.topAnchor, constant: 20).isActive = true
+        openingCrawlLabel.leadingAnchor.constraint(equalTo: self.episodeLabel.leadingAnchor).isActive = true
+        openingCrawlLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
+       
         
 }
     
     func updateCell(with film: Film) {
-        titlleLabel.text = film.title
+        titlleLabel.text = "Filme: \(film.title)"
         episodeLabel.text = "Episodio: \(film.episodeId)"
-        openingCrawlLabel.text = film.openingCrawl
+        openingCrawlLabel.text =  film.openingCrawl
 
     }
 }

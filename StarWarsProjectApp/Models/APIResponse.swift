@@ -13,13 +13,13 @@ struct Film: Codable {
     let title: String
     let episodeId: Int
     let openingCrawl: String
-
+    
     
     enum CodingKeys: String, CodingKey {
         case title
         case episodeId = "episode_id"
         case openingCrawl = "opening_crawl"
-
+        
         
     }
     
@@ -27,7 +27,7 @@ struct Film: Codable {
         self.title = title
         self.episodeId = episodeId
         self.openingCrawl = openingCrawl
-       
+        
     }
 }
 
@@ -37,14 +37,18 @@ struct FilmSummary: Codable {
     let results: [Film]
 }
 
+struct Person: Codable {
+    let name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+}
+
 struct People: Codable {
     let count: Int
-    let next: String?
-    let prev: String?
     let results: [Person]?
 }
 
-struct Person: Codable {
-    let name: String
-}
+
 

@@ -30,9 +30,9 @@
             filePath = "StarWarsProjectApp/Films/FilmTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "applyContraints()"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "updateCell(with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -160,8 +160,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
             endingLineNumber = "14"
-            landmarkName = "films"
-            landmarkType = "24">
+            landmarkName = "FilmsViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "74E35B71-D00C-44A8-8A5E-2D561CCAA888 - 35391bed6b0b1821"
@@ -236,7 +236,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "152">
+                  offsetFromSymbolStart = "148">
                </Location>
                <Location
                   uuid = "74E35B71-D00C-44A8-8A5E-2D561CCAA888 - dddcf75facc3f5b0"
@@ -251,7 +251,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "128">
+                  offsetFromSymbolStart = "124">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -268,8 +268,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
             endingLineNumber = "16"
-            landmarkName = "films"
-            landmarkType = "24">
+            landmarkName = "FilmsViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -284,8 +284,387 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "films"
-            landmarkType = "24">
+            landmarkName = "FilmsViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA252C50-6CE1-4C18-9636-4E3CF9ED1C5F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWarsProjectApp/Films/FilmTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "updateCell(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "892F53E7-4961-4936-B7C8-A713F3277FF6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWarsProjectApp/Films/FilmTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "updateCell(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWarsProjectApp/People/PeopleViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "PeopleViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - 3af00e45956fe555"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StarWarsProjectApp.PeopleViewController.people.getter : Swift.Optional&lt;Swift.Array&lt;StarWarsProjectApp.Person&gt;&gt;"
+                  moduleName = "StarWarsProjectApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - 27ffdc33c3ce7169"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StarWarsProjectApp.PeopleViewController.people.setter : Swift.Optional&lt;Swift.Array&lt;StarWarsProjectApp.Person&gt;&gt;"
+                  moduleName = "StarWarsProjectApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - 9728fa75493d0a58"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StarWarsProjectApp.PeopleViewController.people.modify : Swift.Optional&lt;Swift.Array&lt;StarWarsProjectApp.Person&gt;&gt;"
+                  moduleName = "StarWarsProjectApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - 581171fa2da5000a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StarWarsProjectApp.PeopleViewController.people.modify : Swift.Optional&lt;Swift.Array&lt;StarWarsProjectApp.Person&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "StarWarsProjectApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - 2e418833d74046df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StarWarsProjectApp.PeopleViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StarWarsProjectApp.PeopleViewController"
+                  moduleName = "StarWarsProjectApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - 83eaa2c90839086b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StarWarsProjectApp.PeopleViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StarWarsProjectApp.PeopleViewController&gt;"
+                  moduleName = "StarWarsProjectApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7CF01DC1-5298-4E9B-B47D-2DA8ECDF0FA5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWarsProjectApp/People/PeopleViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "PeopleViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FADB52EF-E055-42B7-8873-015806274FB0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWarsProjectApp/People/PeopleViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "PeopleViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91AC6F7E-EF7F-4B1E-98E1-AD5F345346C4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWarsProjectApp/People/PeopleViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "PeopleViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "91AC6F7E-EF7F-4B1E-98E1-AD5F345346C4 - a7726d19179bbf3e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StarWarsProjectApp.PeopleViewController.peopleTableView.getter : __C.UITableView"
+                  moduleName = "StarWarsProjectApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "91AC6F7E-EF7F-4B1E-98E1-AD5F345346C4 - 2e418833d74041e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StarWarsProjectApp.PeopleViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StarWarsProjectApp.PeopleViewController"
+                  moduleName = "StarWarsProjectApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "91AC6F7E-EF7F-4B1E-98E1-AD5F345346C4 - 83eaa2c908390f52"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StarWarsProjectApp.PeopleViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StarWarsProjectApp.PeopleViewController&gt;"
+                  moduleName = "StarWarsProjectApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "172">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22CFA75F-8486-4D80-B927-67AA8E8DF8F1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWarsProjectApp/People/PeopleViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "getDataFilm()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2203F906-F1C4-429A-90B2-05BB7D808C60"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWarsProjectApp/People/PeopleViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "getDataFilm()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "410AB0E4-7F23-4DE0-8390-EE4BA4299D8B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWarsProjectApp/People/PeopleViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "getDataFilm()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18D68CF3-B751-4945-8477-BB344DF28045"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWarsProjectApp/People/PeopleViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0EFEF55D-2896-47CE-A8A0-D422E7F151DE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWarsProjectApp/People/PeopleViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FF81CE07-B09E-4EA6-AAFA-B490B0A22133"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWarsProjectApp/People/PeopleViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8226F5A8-37D6-45FE-90C8-A0076A00F273"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWarsProjectApp/People/PeopleViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A8D696E8-32D2-4760-9628-B5B5625A0F5C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWarsProjectApp/People/PeopleViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "tableView(_:heightForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44335FED-786D-4922-8906-93F1EF8C795D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWarsProjectApp/People/PeopleTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "updateCell(with:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

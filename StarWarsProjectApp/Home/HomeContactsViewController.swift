@@ -80,12 +80,15 @@ extension HomeViewController: UITableViewDelegate {
         
         let category = categories[indexPath.row]
         let viewController: UIViewController
+       
         
         switch category {
         case .films: viewController = FilmsViewController()
+        case .people: viewController = PeopleViewController()
         default: viewController = FilmsViewController()
         }
         
         navigationController?.pushViewController(viewController, animated: true)
+        
     }
 }

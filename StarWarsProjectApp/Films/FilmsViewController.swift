@@ -11,10 +11,11 @@ import UIKit
 class FilmsViewController: UIViewController {
     
     let network = NetworkManager()
-    var films: [Film]?{
+    var films: [Film]? = [] {
         didSet {
             DispatchQueue.main.async {
                 self.filmTableView.reloadData()
+                print("Carregando")
             }
         }
     }
@@ -26,7 +27,6 @@ class FilmsViewController: UIViewController {
         view.addSubview(filmTableView)
         filmTableView.delegate = self
         filmTableView.dataSource = self
-        filmTableView.backgroundColor = .red
         filmTableView.register(FilmTableViewCell.self, forCellReuseIdentifier: "filmCell")
         view.backgroundColor = UIColor(cgColor: .init(red: 1, green: 1, blue: 1, alpha: 1))
         applyContraints()
@@ -55,7 +55,7 @@ class FilmsViewController: UIViewController {
     
     func getDataFilm() {
         network.fetchFilms { (films) in
-            self.films = self.films
+            self.films = films
         }
     }
 }
@@ -86,6 +86,6 @@ extension FilmsViewController: UITableViewDataSource {
 extension FilmsViewController: UITableViewDelegate {
     //Funcao usada para dar altura na célula
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        return 180
     }
 }

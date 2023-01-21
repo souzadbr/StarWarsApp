@@ -10,87 +10,85 @@ import UIKit
 
 final class NetworkManager{
     
-       // variavel filme do tipo Film que recebe um array vazio
-          var films: [Film] = []
-        // constante privada que recebe a URL da API
-         private let domainURLString = "https://swapi.co/api/"
+    // variavel filme do tipo Film que recebe um array vazio
+    var films: [Film] = []
+    var peoples: [People] = []
     
-       // funcao fetchFilms usa de completionHandler para fazer a chamada ao servidor de dados e aguardar o retorno enquanto o app faz outras coisas como carregar o restante da tela por exemplo.
-            func fetchFilms(completionHandler: @escaping ([Film])-> Void) {
-                //url que concatena com o final films para puxar informacoes de filmes da API
-                let url = URL(string: domainURLString + "films/")!
-                //aqui o URLSEssion é um gerenciardor de dados e o dataTasks pede dados ao URLSEssion
-                let task = URLSession.shared.dataTask(with: url, completionHandler: {(data, response, error) in
-                    if let error = error {
-                        print("Error with fetching films: \(error)")
-                    }
+    // constante privada que recebe a URL da API
+    private let domainURLString = "https://swapi.dev/api/"
     
-                    guard let httpResponse = response as? HTTPURLResponse,
-                          (200...299).contains(httpResponse.statusCode) else {
-                        print ("Error with the response, unexpectd status code: \(String(describing: response) ?? "")")
-                        return
-                    }
-    
-                    if let data = data,
-                       let filmSummary = try? JSONDecoder().decode(FilmSummary.self, from: data) {
-                        completionHandler(filmSummary.results ?? [])
-                    }
-                })
-    
-                task.resume()
+    // funcao fetchFilms usa de completionHandler para fazer a chamada ao servidor de dados e aguardar o retorno enquanto o app faz outras coisas como carregar o restante da tela por exemplo.
+    func fetchFilms(completionHandler: @escaping ([Film])-> Void) {
+        //url que concatena com o final films para puxar informacoes de filmes da API
+        let url = URL(string: domainURLString + "films/")!
+        //aqui o URLSEssion é um gerenciardor de dados e o dataTasks pede dados ao URLSEssion
+        let task = URLSession.shared.dataTask(with: url, completionHandler: {(data, response, error) in
+            if let error = error {
+                print("Error with fetching films: \(error)")
             }
+            
+            guard let httpResponse = response as? HTTPURLResponse,
+                  (200...299).contains(httpResponse.statusCode) else {
+                print ("Error with the response, unexpectd status code: \(String(describing: response) ?? "")")
+                return
+            }
+            
+            if let data = data,
+               let filmSummary = try? JSONDecoder().decode(FilmSummary.self, from: data) {
+                completionHandler(filmSummary.results ?? [])
+            }
+        })
+        
+        task.resume()
+    }
     
     
-    
-    
-    
-    
-        func fetchFilm(withID id: Int, completionHandler: @escaping (Film)-> Void) {
-    
-            let url = URL(string: domainURLString + "films/\(id)")!
-    
-            let task = URLSession.shared.dataTask(with: url, completionHandler: {(data, response, error) in
-                if let error = error {
-                    print ("Error returning film in id \(id): \(error)")
-                    return
-                }
-                guard let httpResponse = response as? HTTPURLResponse,
-                      (200...299).contains(httpResponse.statusCode) else {
-                    print("Unexpected response status code: \(String(describing: response))")
-                    return
-                }
-                if let data = data,
-                   let film = try? JSONDecoder().decode(Film.self, from: data) {
-                    completionHandler(film)
-                }
-            })
-            task.resume()
-        }    
+    func fetchPeople(completionHandler: @escaping ([Person])-> Void) {
+        
+        let url = URL(string: domainURLString + "people/")!
+        
+        let task = URLSession.shared.dataTask(with: url, completionHandler: {(data, response, error) in
+            if let error = error {
+                print ("Error returning people. Error: \(error)")
+                return
+            }
+            guard let httpResponse = response as? HTTPURLResponse,
+                  (200...299).contains(httpResponse.statusCode) else {
+                print("Unexpected response status code: \(String(describing: response))")
+                return
+            }
+            if let data = data,
+               let peopleData = try? JSONDecoder().decode(People.self, from: data) {
+                completionHandler(peopleData.results ?? [])
+            }
+        })
+        task.resume()
+    }
 }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
