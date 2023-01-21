@@ -160,8 +160,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
             endingLineNumber = "14"
-            landmarkName = "FilmsViewController"
-            landmarkType = "3">
+            landmarkName = "films"
+            landmarkType = "24">
             <Locations>
                <Location
                   uuid = "74E35B71-D00C-44A8-8A5E-2D561CCAA888 - 35391bed6b0b1821"
@@ -268,8 +268,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
             endingLineNumber = "16"
-            landmarkName = "FilmsViewController"
-            landmarkType = "3">
+            landmarkName = "films"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -284,8 +284,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "FilmsViewController"
-            landmarkType = "3">
+            landmarkName = "films"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -332,8 +332,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
             endingLineNumber = "14"
-            landmarkName = "PeopleViewController"
-            landmarkType = "3">
+            landmarkName = "people"
+            landmarkType = "24">
             <Locations>
                <Location
                   uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - 3af00e45956fe555"
@@ -440,8 +440,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
             endingLineNumber = "16"
-            landmarkName = "PeopleViewController"
-            landmarkType = "3">
+            landmarkName = "people"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -456,8 +456,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "PeopleViewController"
-            landmarkType = "3">
+            landmarkName = "people"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

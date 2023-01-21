@@ -10,10 +10,6 @@ import UIKit
 
 final class NetworkManager{
     
-    // variavel filme do tipo Film que recebe um array vazio
-    var films: [Film] = []
-    var peoples: [People] = []
-    
     // constante privada que recebe a URL da API
     private let domainURLString = "https://swapi.dev/api/"
     
@@ -29,7 +25,7 @@ final class NetworkManager{
             
             guard let httpResponse = response as? HTTPURLResponse,
                   (200...299).contains(httpResponse.statusCode) else {
-                print ("Error with the response, unexpectd status code: \(String(describing: response) ?? "")")
+                print ("Error with the response, unexpectd status code: \(String(describing: response))")
                 return
             }
             

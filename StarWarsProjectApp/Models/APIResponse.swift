@@ -34,7 +34,7 @@ struct Film: Codable {
 //Struct sumario de filmes que usa de uma composicao de Filmes.
 struct FilmSummary: Codable {
     let count: Int
-    let results: [Film]
+    let results: [Film]?
 }
 
 struct Person: Codable {
