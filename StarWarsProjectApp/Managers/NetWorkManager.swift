@@ -10,8 +10,11 @@ import UIKit
 
 final class NetworkManager{
     
+    
     // constante privada que recebe a URL da API
     private let domainURLString = "https://swapi.dev/api/"
+    
+    //MARK: -fetchFilms
     
     // funcao fetchFilms usa de completionHandler para fazer a chamada ao servidor de dados e aguardar o retorno enquanto o app faz outras coisas como carregar o restante da tela por exemplo.
     func fetchFilms(completionHandler: @escaping ([Film])-> Void) {
@@ -38,6 +41,7 @@ final class NetworkManager{
         task.resume()
     }
     
+    //MARK: fetchPeople
     
     func fetchPeople(completionHandler: @escaping ([Person])-> Void) {
         
@@ -61,6 +65,8 @@ final class NetworkManager{
         task.resume()
     }
     
+    //MARK: fetchPlanets
+    
     func fetchPlanets(completionHandler: @escaping ([Planet])-> Void) {
         
         let url = URL(string: domainURLString + "planets/")!
@@ -78,6 +84,30 @@ final class NetworkManager{
             if let data = data,
                let planetData = try? JSONDecoder().decode(Planets.self, from: data) {
                 completionHandler(planetData.results ?? [])
+            }
+        })
+        task.resume()
+    }
+    
+    //MARK: fetchStarship
+    
+    func fetchStarship(completionHandler: @escaping ([Starship])-> Void) {
+        
+        let url = URL(string: domainURLString + "starships/")!
+        
+        let task = URLSession.shared.dataTask(with: url, completionHandler: {(data, response, error) in
+            if let error = error {
+                print ("Error returning people. Error: \(error)")
+                return
+            }
+            guard let httpResponse = response as? HTTPURLResponse,
+                  (200...299).contains(httpResponse.statusCode) else {
+                print("Unexpected response status code: \(String(describing: response))")
+                return
+            }
+            if let data = data,
+               let starshipsData = try? JSONDecoder().decode(Starships.self, from: data) {
+                completionHandler(starshipsData.results ?? [])
             }
         })
         task.resume()

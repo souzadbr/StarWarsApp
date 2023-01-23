@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     
-    private let categories: [Category] = [.films, .people, .planets, .vehicles, .starships, .species]
+    private let categories: [Category] = [.films, .people, .planets, .starships, .species] //.vehicules não esta retornanod da API quando retornar o servico sera add no app 
     
     let homeTableView = UITableView() // view
     
@@ -86,6 +86,7 @@ extension HomeViewController: UITableViewDelegate {
         case .films: viewController = FilmsViewController()
         case .people: viewController = PeopleViewController()
         case .planets: viewController = PlanetsViewController()
+        case .starships: viewController = StarshipViewController()
         default: viewController = FilmsViewController()
         }
         

@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+//MARK: - Films
 //Struct dos dados relacionados a Filmes
 struct Film: Codable {
     let title: String
@@ -37,6 +37,8 @@ struct FilmSummary: Codable {
     let results: [Film]?
 }
 
+//MARK: - People
+
 struct Person: Codable {
     let name: String
     let hairColor: String
@@ -63,6 +65,8 @@ struct People: Codable {
     let results: [Person]?
 }
 
+//MARK: - Planets
+
 struct Planet: Codable {
     let name: String
 }
@@ -70,4 +74,18 @@ struct Planet: Codable {
 struct Planets: Codable {
     let count: Int
     let results: [Planet]?
+}
+
+//MARK: - Starships
+
+struct Starship: Codable {
+    let name: String
+    let classification: String
+    let designation: String
+    let language: String
+}
+
+struct Starships: Codable {
+    let count: Int
+    let results: [Starship]?
 }
