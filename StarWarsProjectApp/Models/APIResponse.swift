@@ -63,5 +63,11 @@ struct People: Codable {
     let results: [Person]?
 }
 
+struct Planet: Codable {
+    let name: String
+}
 
-
+struct Planets: Codable {
+    let count: Int
+    let results: [Planet]?
+}

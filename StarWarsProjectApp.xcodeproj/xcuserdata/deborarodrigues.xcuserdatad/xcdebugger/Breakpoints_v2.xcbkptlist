@@ -164,14 +164,14 @@
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "74E35B71-D00C-44A8-8A5E-2D561CCAA888 - 35391bed6b0b1821"
+                  uuid = "74E35B71-D00C-44A8-8A5E-2D561CCAA888 - ff078c43318db14c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "StarWarsProjectApp.FilmsViewController.films.getter : Swift.Optional&lt;Swift.Array&lt;StarWarsProjectApp.Film&gt;&gt;"
                   moduleName = "StarWarsProjectApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/Films/FilmsViewController.swift"
+                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/Films/FilmsViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -179,14 +179,14 @@
                   offsetFromSymbolStart = "88">
                </Location>
                <Location
-                  uuid = "74E35B71-D00C-44A8-8A5E-2D561CCAA888 - cc0205af7185c35"
+                  uuid = "74E35B71-D00C-44A8-8A5E-2D561CCAA888 - c6feb7f4ad9ef558"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "StarWarsProjectApp.FilmsViewController.films.setter : Swift.Optional&lt;Swift.Array&lt;StarWarsProjectApp.Film&gt;&gt;"
                   moduleName = "StarWarsProjectApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/Films/FilmsViewController.swift"
+                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/Films/FilmsViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -194,14 +194,14 @@
                   offsetFromSymbolStart = "112">
                </Location>
                <Location
-                  uuid = "74E35B71-D00C-44A8-8A5E-2D561CCAA888 - 696500bdc2c8f924"
+                  uuid = "74E35B71-D00C-44A8-8A5E-2D561CCAA888 - a35b9713984e5049"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "StarWarsProjectApp.FilmsViewController.films.modify : Swift.Optional&lt;Swift.Array&lt;StarWarsProjectApp.Film&gt;&gt;"
                   moduleName = "StarWarsProjectApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/Films/FilmsViewController.swift"
+                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/Films/FilmsViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -209,14 +209,14 @@
                   offsetFromSymbolStart = "0">
                </Location>
                <Location
-                  uuid = "74E35B71-D00C-44A8-8A5E-2D561CCAA888 - ed5f0b259b8111ca"
+                  uuid = "74E35B71-D00C-44A8-8A5E-2D561CCAA888 - 27619c8bc107b8a7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "StarWarsProjectApp.FilmsViewController.films.modify : Swift.Optional&lt;Swift.Array&lt;StarWarsProjectApp.Film&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
                   moduleName = "StarWarsProjectApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/Films/FilmsViewController.swift"
+                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/Films/FilmsViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -224,14 +224,14 @@
                   offsetFromSymbolStart = "20">
                </Location>
                <Location
-                  uuid = "74E35B71-D00C-44A8-8A5E-2D561CCAA888 - b7e4448b44c3d10d"
+                  uuid = "74E35B71-D00C-44A8-8A5E-2D561CCAA888 - 7ddad3251e457860"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "StarWarsProjectApp.FilmsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StarWarsProjectApp.FilmsViewController"
                   moduleName = "StarWarsProjectApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/Films/FilmsViewController.swift"
+                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/Films/FilmsViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -239,14 +239,14 @@
                   offsetFromSymbolStart = "148">
                </Location>
                <Location
-                  uuid = "74E35B71-D00C-44A8-8A5E-2D561CCAA888 - dddcf75facc3f5b0"
+                  uuid = "74E35B71-D00C-44A8-8A5E-2D561CCAA888 - 17e260f1f6455cdd"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "StarWarsProjectApp.FilmsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StarWarsProjectApp.FilmsViewController&gt;"
                   moduleName = "StarWarsProjectApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/Films/FilmsViewController.swift"
+                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/Films/FilmsViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -336,14 +336,14 @@
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - 3af00e45956fe555"
+                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - c5d45b9d5835f187"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "StarWarsProjectApp.PeopleViewController.people.getter : Swift.Optional&lt;Swift.Array&lt;StarWarsProjectApp.Person&gt;&gt;"
                   moduleName = "StarWarsProjectApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/People/PeopleViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -351,14 +351,14 @@
                   offsetFromSymbolStart = "88">
                </Location>
                <Location
-                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - 27ffdc33c3ce7169"
+                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - d8db89eb0e9465bb"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "StarWarsProjectApp.PeopleViewController.people.setter : Swift.Optional&lt;Swift.Array&lt;StarWarsProjectApp.Person&gt;&gt;"
                   moduleName = "StarWarsProjectApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/People/PeopleViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -366,14 +366,14 @@
                   offsetFromSymbolStart = "112">
                </Location>
                <Location
-                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - 9728fa75493d0a58"
+                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - 680cafad84671e8a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "StarWarsProjectApp.PeopleViewController.people.modify : Swift.Optional&lt;Swift.Array&lt;StarWarsProjectApp.Person&gt;&gt;"
                   moduleName = "StarWarsProjectApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/People/PeopleViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -381,14 +381,14 @@
                   offsetFromSymbolStart = "0">
                </Location>
                <Location
-                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - 581171fa2da5000a"
+                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - a7352422e0ff14d8"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "StarWarsProjectApp.PeopleViewController.people.modify : Swift.Optional&lt;Swift.Array&lt;StarWarsProjectApp.Person&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
                   moduleName = "StarWarsProjectApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/People/PeopleViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -396,14 +396,14 @@
                   offsetFromSymbolStart = "20">
                </Location>
                <Location
-                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - 2e418833d74046df"
+                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - d165ddeb1a1a520d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "StarWarsProjectApp.PeopleViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StarWarsProjectApp.PeopleViewController"
                   moduleName = "StarWarsProjectApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/People/PeopleViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -411,14 +411,14 @@
                   offsetFromSymbolStart = "148">
                </Location>
                <Location
-                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - 83eaa2c90839086b"
+                  uuid = "5DBD150A-3623-4C07-95B8-515360B6C0A6 - 7ccef711c5631cb9"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "StarWarsProjectApp.PeopleViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StarWarsProjectApp.PeopleViewController&gt;"
                   moduleName = "StarWarsProjectApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/People/PeopleViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -476,14 +476,14 @@
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "91AC6F7E-EF7F-4B1E-98E1-AD5F345346C4 - a7726d19179bbf3e"
+                  uuid = "91AC6F7E-EF7F-4B1E-98E1-AD5F345346C4 - 585638c1dac1938c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "StarWarsProjectApp.PeopleViewController.peopleTableView.getter : __C.UITableView"
                   moduleName = "StarWarsProjectApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/People/PeopleViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "23"
@@ -491,14 +491,14 @@
                   offsetFromSymbolStart = "48">
                </Location>
                <Location
-                  uuid = "91AC6F7E-EF7F-4B1E-98E1-AD5F345346C4 - 2e418833d74041e6"
+                  uuid = "91AC6F7E-EF7F-4B1E-98E1-AD5F345346C4 - d165ddeb1a1a6d54"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "StarWarsProjectApp.PeopleViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StarWarsProjectApp.PeopleViewController"
                   moduleName = "StarWarsProjectApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/People/PeopleViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "23"
@@ -506,14 +506,14 @@
                   offsetFromSymbolStart = "196">
                </Location>
                <Location
-                  uuid = "91AC6F7E-EF7F-4B1E-98E1-AD5F345346C4 - 83eaa2c908390f52"
+                  uuid = "91AC6F7E-EF7F-4B1E-98E1-AD5F345346C4 - 7ccef711c56323e0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "StarWarsProjectApp.PeopleViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StarWarsProjectApp.PeopleViewController&gt;"
                   moduleName = "StarWarsProjectApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/Projetos%20Pessoais/StarWarsProjectApp/StarWarsProjectApp/People/PeopleViewController.swift"
+                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/People/PeopleViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "23"

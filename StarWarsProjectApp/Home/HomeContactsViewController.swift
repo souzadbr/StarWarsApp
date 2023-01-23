@@ -85,6 +85,7 @@ extension HomeViewController: UITableViewDelegate {
         switch category {
         case .films: viewController = FilmsViewController()
         case .people: viewController = PeopleViewController()
+        case .planets: viewController = PlanetsViewController()
         default: viewController = FilmsViewController()
         }
         

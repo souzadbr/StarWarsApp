@@ -70,8 +70,8 @@ final class FilmTableViewCell: UITableViewCell {
 }
     
     func updateCell(with film: Film) {
-        titlleLabel.text = "Filme: \(film.title)"
-        episodeLabel.text = "Episodio: \(film.episodeId)"
+        titlleLabel.text = "Film: \(film.title)"
+        episodeLabel.text = "Episode: \(film.episodeId)"
         openingCrawlLabel.text =  film.openingCrawl
 
     }

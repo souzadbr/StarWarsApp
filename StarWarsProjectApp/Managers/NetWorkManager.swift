@@ -60,6 +60,28 @@ final class NetworkManager{
         })
         task.resume()
     }
+    
+    func fetchPlanets(completionHandler: @escaping ([Planet])-> Void) {
+        
+        let url = URL(string: domainURLString + "planets/")!
+        
+        let task = URLSession.shared.dataTask(with: url, completionHandler: {(data, response, error) in
+            if let error = error {
+                print ("Error returning people. Error: \(error)")
+                return
+            }
+            guard let httpResponse = response as? HTTPURLResponse,
+                  (200...299).contains(httpResponse.statusCode) else {
+                print("Unexpected response status code: \(String(describing: response))")
+                return
+            }
+            if let data = data,
+               let planetData = try? JSONDecoder().decode(Planets.self, from: data) {
+                completionHandler(planetData.results ?? [])
+            }
+        })
+        task.resume()
+    }
 }
 
 
