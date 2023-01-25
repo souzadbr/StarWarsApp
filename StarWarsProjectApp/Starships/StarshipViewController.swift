@@ -5,13 +5,13 @@
 //  Created by Debora Rodrigues  on 23/01/23.
 //
 
+
 import UIKit
 
 class StarshipViewController: UIViewController {
     
     let network = NetworkManager()
-    
-    var starship: [Starship]? = [] {
+    var starships: [Starship]? = [] {
         didSet {
             DispatchQueue.main.async {
                 self.starshipTableView.reloadData()
@@ -53,7 +53,7 @@ class StarshipViewController: UIViewController {
     
     func getDataStarship() {
         network.fetchStarship { (starship) in
-            self.starship = starship
+            self.starships = starship
         }
     }
 }
@@ -65,7 +65,7 @@ extension StarshipViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //Retorna o numero de contatos presentes no array trasendo numero de linhas por sessão.
-        return starship?.count ?? 0
+        return starships?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -73,7 +73,8 @@ extension StarshipViewController: UITableViewDataSource {
        guard let cell = tableView.dequeueReusableCell(withIdentifier: "starshipCell", for: indexPath) as? StarshipTableViewCell else {
             fatalError("Issue dequeuing starshipCell")
         }
-        cell.updateCell(with: starship?[indexPath.row] ?? Starship(name: "Algo", classification: "deu", designation: "muito", language: "errado"))
+        cell.updateCell(with: starships?[indexPath.row] ?? Starship(name: "Algo", classification: "deu", language: "errado"))
+        
         return cell
     }
 }

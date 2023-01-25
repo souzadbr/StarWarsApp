@@ -25,15 +25,7 @@ class StarshipTableViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
         return label
     } ()
-    
-    let designationLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 16)
-        label.textColor = UIColor(cgColor: .init(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
-        label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
-        return label
-    } ()
-    
+  
     let languageLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 16)
@@ -49,7 +41,6 @@ class StarshipTableViewCell: UITableViewCell {
         
         self.contentView.addSubview(nameLabel)
         self.contentView.addSubview(classificationLabel)
-        self.contentView.addSubview(designationLabel)
         self.contentView.addSubview(languageLabel)
         
         applyContraints()
@@ -65,19 +56,14 @@ class StarshipTableViewCell: UITableViewCell {
         nameLabel.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 15).isActive = true
         nameLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 70).isActive = true
         
-        //episodeLabel
+        //classificationLabel
         classificationLabel.topAnchor.constraint(equalTo: self.nameLabel.topAnchor, constant: 50).isActive = true
         classificationLabel.leadingAnchor.constraint(equalTo: self.nameLabel.leadingAnchor, constant: 30).isActive = true
         classificationLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
         
-        //openingCrawlLabel
-        designationLabel.topAnchor.constraint(equalTo: self.classificationLabel.topAnchor, constant: 20).isActive = true
-        designationLabel.leadingAnchor.constraint(equalTo: self.classificationLabel.leadingAnchor).isActive = true
-        designationLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
-        
-        //genderLabel
-        languageLabel.topAnchor.constraint(equalTo: self.designationLabel.topAnchor, constant: 20).isActive = true
-        languageLabel.leadingAnchor.constraint(equalTo: self.designationLabel.leadingAnchor).isActive = true
+        //languageLabel
+        languageLabel.topAnchor.constraint(equalTo: self.classificationLabel.topAnchor, constant: 20).isActive = true
+        languageLabel.leadingAnchor.constraint(equalTo: self.classificationLabel.leadingAnchor).isActive = true
         languageLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
         
     }
@@ -85,7 +71,6 @@ class StarshipTableViewCell: UITableViewCell {
     func updateCell(with starship: Starship) {
         nameLabel.text = "Name Person: \(starship.name)"
         classificationLabel.text = "Hair Color Person: \(starship.classification)"
-        designationLabel.text = "Skin Color Person: \(starship.designation)"
         languageLabel.text = "Gender: \(starship.language)"
     }
 }

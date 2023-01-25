@@ -81,7 +81,6 @@ struct Planets: Codable {
 struct Starship: Codable {
     let name: String
     let classification: String
-    let designation: String
     let language: String
 }
 
