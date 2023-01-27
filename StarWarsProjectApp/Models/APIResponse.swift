@@ -80,11 +80,23 @@ struct Planets: Codable {
 
 struct Starship: Codable {
     let name: String
-    let classification: String
-    let language: String
+    let model: String
+    let manufacturer: String
 }
 
 struct Starships: Codable {
     let count: Int
     let results: [Starship]?
+}
+
+//MARK: -Species
+
+struct Specie: Codable {
+    let name: String
+    let language: String
+}
+
+struct Species: Codable {
+    let count: Int
+    let results: [Specie]?
 }
