@@ -29,7 +29,8 @@ final class FilmTableViewCell: UITableViewCell {
     
     let openingCrawlLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 18)
+        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.numberOfLines = 50
         label.textColor = UIColor(cgColor: .init(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
         label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
         return label
@@ -63,8 +64,8 @@ final class FilmTableViewCell: UITableViewCell {
         
         //openingCrawlLabel
         openingCrawlLabel.topAnchor.constraint(equalTo: self.episodeLabel.topAnchor, constant: 20).isActive = true
-        openingCrawlLabel.leadingAnchor.constraint(equalTo: self.episodeLabel.leadingAnchor).isActive = true
-        openingCrawlLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
+        openingCrawlLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 25).isActive = true
+        openingCrawlLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: 15).isActive = true
        
         
 }

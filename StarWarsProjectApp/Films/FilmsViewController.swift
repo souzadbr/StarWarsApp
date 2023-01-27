@@ -86,6 +86,6 @@ extension FilmsViewController: UITableViewDataSource {
 extension FilmsViewController: UITableViewDelegate {
     //Funcao usada para dar altura na célula
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 180
+        return 520
     }
 }
