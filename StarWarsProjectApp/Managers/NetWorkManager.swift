@@ -15,7 +15,6 @@ final class NetworkManager{
     private let domainURLString = "https://swapi.dev/api/"
     
     //MARK: -fetchFilms
-    
     // funcao fetchFilms usa de completionHandler para fazer a chamada ao servidor de dados e aguardar o retorno enquanto o app faz outras coisas como carregar o restante da tela por exemplo.
     func fetchFilms(completionHandler: @escaping ([Film])-> Void) {
         //url que concatena com o final films para puxar informacoes de filmes da API
@@ -73,7 +72,7 @@ final class NetworkManager{
         
         let task = URLSession.shared.dataTask(with: url, completionHandler: {(data, response, error) in
             if let error = error {
-                print ("Error returning people. Error: \(error)")
+                print ("Error returning planets. Error: \(error)")
                 return
             }
             guard let httpResponse = response as? HTTPURLResponse,
@@ -89,7 +88,7 @@ final class NetworkManager{
         task.resume()
     }
     
-    //MARK: fetchStarship
+    //MARK: fetchStarships
     
     func fetchStarship(completionHandler: @escaping ([Starship])-> Void) {
         
@@ -97,7 +96,7 @@ final class NetworkManager{
         
         let task = URLSession.shared.dataTask(with: url, completionHandler: {(data, response, error) in
             if let error = error {
-                print ("Error returning people. Error: \(error)")
+                print ("Error returning starships. Error: \(error)")
                 return
             }
             guard let httpResponse = response as? HTTPURLResponse,
@@ -106,8 +105,32 @@ final class NetworkManager{
                 return
             }
             if let data = data,
-               let starshipsData = try? JSONDecoder().decode(Starships.self, from: data) {
-                completionHandler(starshipsData.results ?? [])
+               let planetData = try? JSONDecoder().decode(Starships.self, from: data) {
+                completionHandler(planetData.results ?? [])
+            }
+        })
+        task.resume()
+    }
+    
+    //MARK: fetchSpecies
+    
+    func fetchSpecies(completionHandler: @escaping ([Specie])-> Void) {
+        
+        let url = URL(string: domainURLString + "species/")!
+        
+        let task = URLSession.shared.dataTask(with: url, completionHandler: {(data, response, error) in
+            if let error = error {
+                print ("Error returning species. Error: \(error)")
+                return
+            }
+            guard let httpResponse = response as? HTTPURLResponse,
+                  (200...299).contains(httpResponse.statusCode) else {
+                print("Unexpected response status code: \(String(describing: response))")
+                return
+            }
+            if let data = data,
+               let planetData = try? JSONDecoder().decode(Species.self, from: data) {
+                completionHandler(planetData.results ?? [])
             }
         })
         task.resume()
