@@ -39,7 +39,7 @@ class StarshipViewController: UIViewController {
         starshipTableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         starshipTableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         
-        starshipTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        starshipTableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         starshipTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
     }
@@ -73,7 +73,7 @@ extension StarshipViewController: UITableViewDataSource {
        guard let cell = tableView.dequeueReusableCell(withIdentifier: "starshipCell", for: indexPath) as? StarshipTableViewCell else {
             fatalError("Issue dequeuing starshipCell")
         }
-        cell.updateCell(with: starships?[indexPath.row] ?? Starship(name: "Algo", classification: "deu", language: "errado"))
+        cell.updateCell(with: starships?[indexPath.row] ?? Starship(name: "Algo", model: "deu", manufacturer: "errado"))
         
         return cell
     }
