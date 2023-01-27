@@ -30,8 +30,8 @@
             filePath = "StarWarsProjectApp/Films/FilmTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "updateCell(with:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -298,8 +298,8 @@
             filePath = "StarWarsProjectApp/Films/FilmTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "updateCell(with:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -314,8 +314,8 @@
             filePath = "StarWarsProjectApp/Films/FilmTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "updateCell(with:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -915,22 +915,6 @@
             filePath = "StarWarsProjectApp/Starships/StarshipTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "updateCell(with:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "12C5D5A6-0F05-41BE-919A-D6EA40D91551"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StarWarsProjectApp/Starships/StarshipTableViewCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
             endingLineNumber = "73"
             landmarkName = "updateCell(with:)"
@@ -940,7 +924,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DE70FC9D-6F79-4784-A7F1-FF779BDDE3AF"
+            uuid = "12C5D5A6-0F05-41BE-919A-D6EA40D91551"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -956,112 +940,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "543C4DA6-7B8B-4B31-BB54-B9C9A99CC014"
+            uuid = "DE70FC9D-6F79-4784-A7F1-FF779BDDE3AF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StarWarsProjectApp/Managers/NetWorkManager.swift"
+            filePath = "StarWarsProjectApp/Starships/StarshipTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "fetchStarship(completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6A2D4F87-9486-421C-A8B0-C1BFA425D457"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StarWarsProjectApp/Managers/NetWorkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "fetchStarship(completionHandler:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6A2D4F87-9486-421C-A8B0-C1BFA425D457 - f99da49082b97319"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StarWarsProjectApp.NetworkManager.fetchStarship(completionHandler: (Swift.Array&lt;StarWarsProjectApp.Starship&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "StarWarsProjectApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/Managers/NetWorkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "108"
-                  endingLineNumber = "108"
-                  offsetFromSymbolStart = "920">
-               </Location>
-               <Location
-                  uuid = "6A2D4F87-9486-421C-A8B0-C1BFA425D457 - f99da49082b97319"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StarWarsProjectApp.NetworkManager.fetchStarship(completionHandler: (Swift.Array&lt;StarWarsProjectApp.Starship&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "StarWarsProjectApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/Managers/NetWorkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "108"
-                  endingLineNumber = "108"
-                  offsetFromSymbolStart = "968">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D67ABB39-D7F7-41A5-8DD1-594821548272"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StarWarsProjectApp/Managers/NetWorkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "fetchStarship(completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "77AD35DE-814E-4FA3-B309-B2A0057D14DD"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StarWarsProjectApp/Managers/NetWorkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "fetchStarship(completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "548FF05C-00F6-480E-A2FF-AA5F0C103BA5"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StarWarsProjectApp/Managers/NetWorkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "fetchStarship(completionHandler:)"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "updateCell(with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1075,8 +963,8 @@
             filePath = "StarWarsProjectApp/Managers/NetWorkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "fetchFilms(completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1091,13 +979,13 @@
             filePath = "StarWarsProjectApp/Managers/NetWorkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "fetchFilms(completionHandler:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "42CC2A6A-92AD-4C65-8F8E-B516705CBFCF - db4416ae6029ef96"
+                  uuid = "42CC2A6A-92AD-4C65-8F8E-B516705CBFCF - db4416ae6029e877"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1107,12 +995,12 @@
                   urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/Managers/NetWorkManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
                   offsetFromSymbolStart = "924">
                </Location>
                <Location
-                  uuid = "42CC2A6A-92AD-4C65-8F8E-B516705CBFCF - db4416ae6029ef96"
+                  uuid = "42CC2A6A-92AD-4C65-8F8E-B516705CBFCF - db4416ae6029e877"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1122,8 +1010,8 @@
                   urlString = "file:///Users/deborarodrigues/Documents/StarWarsApp/StarWarsProjectApp/Managers/NetWorkManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
                   offsetFromSymbolStart = "972">
                </Location>
             </Locations>
@@ -1139,8 +1027,8 @@
             filePath = "StarWarsProjectApp/Managers/NetWorkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "fetchFilms(completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1155,8 +1043,8 @@
             filePath = "StarWarsProjectApp/Managers/NetWorkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "fetchFilms(completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1171,8 +1059,8 @@
             filePath = "StarWarsProjectApp/Managers/NetWorkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "fetchFilms(completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>

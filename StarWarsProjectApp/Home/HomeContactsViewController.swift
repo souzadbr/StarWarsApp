@@ -87,6 +87,7 @@ extension HomeViewController: UITableViewDelegate {
         case .people: viewController = PeopleViewController()
         case .planets: viewController = PlanetsViewController()
         case .starships: viewController = StarshipViewController()
+        case .species: viewController = SpeciesViewController()
         default: viewController = FilmsViewController()
         }
         
