@@ -24,17 +24,25 @@ final class HomeTableViewCell: UITableViewCell {
     let nameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.textColor = UIColor(cgColor: .init(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
+        label.textColor = UIColor(cgColor: .init(red: 0, green: 0, blue: 0, alpha: 1))
         label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
         return label
     } ()
- 
+    
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.contentView.backgroundColor = UIColor(cgColor: .init(red: 0.8, green: 0.8, blue: 0.8, alpha: 1))
         self.contentView.addSubview(profileImageView)
         self.contentView.addSubview(nameLabel)
         applyContraints()
+        
+        // Adicionando efeito de sombra
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 2)
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowRadius = 4
+        self.layer.masksToBounds = false
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -55,8 +63,8 @@ final class HomeTableViewCell: UITableViewCell {
         nameLabel.topAnchor.constraint(equalTo: self.profileImageView.topAnchor, constant: 20).isActive = true
         nameLabel.leadingAnchor.constraint(equalTo: self.profileImageView.leadingAnchor, constant: 120).isActive = true
         nameLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
- 
-}
+        
+    }
     func updateCell(with category: Category) {
         profileImageView.image = category.icon
         nameLabel.text = category.title

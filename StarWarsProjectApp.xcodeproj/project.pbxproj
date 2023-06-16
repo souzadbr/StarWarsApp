@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A5238E42A3CAF3B0035F8ED /* FilmsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5238E32A3CAF3B0035F8ED /* FilmsResponse.swift */; };
+		6A5238E72A3CAF850035F8ED /* PeopleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5238E62A3CAF850035F8ED /* PeopleResponse.swift */; };
+		6A5238EA2A3CB01A0035F8ED /* PlanetsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5238E92A3CB01A0035F8ED /* PlanetsResponse.swift */; };
+		6A5238EF2A3CB1320035F8ED /* StarshipsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5238EE2A3CB1320035F8ED /* StarshipsResponse.swift */; };
+		6A5238F22A3CB15D0035F8ED /* SpeciesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5238F12A3CB15D0035F8ED /* SpeciesResponse.swift */; };
 		6AADD1DA2975FDDD003D9982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AADD1D92975FDDD003D9982 /* AppDelegate.swift */; };
 		6AADD1DC2975FDDD003D9982 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AADD1DB2975FDDD003D9982 /* SceneDelegate.swift */; };
 		6AADD1DE2975FDDD003D9982 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AADD1DD2975FDDD003D9982 /* ViewController.swift */; };
@@ -15,7 +20,6 @@
 		6AADD1EE297751E5003D9982 /* HomeContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AADD1ED297751E5003D9982 /* HomeContactsViewController.swift */; };
 		6AADD1F129775275003D9982 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AADD1F029775275003D9982 /* HomeTableViewCell.swift */; };
 		6AADD1F629775359003D9982 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AADD1F529775359003D9982 /* Category.swift */; };
-		6AADD1F82977FFA8003D9982 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AADD1F72977FFA8003D9982 /* APIResponse.swift */; };
 		6AADD1FB29780329003D9982 /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AADD1FA29780329003D9982 /* NetWorkManager.swift */; };
 		6AADD1FD297897F9003D9982 /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AADD1FC297897F9003D9982 /* FilmsViewController.swift */; };
 		6AADD20129789845003D9982 /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AADD20029789845003D9982 /* FilmTableViewCell.swift */; };
@@ -31,6 +35,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A5238E32A3CAF3B0035F8ED /* FilmsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsResponse.swift; sourceTree = "<group>"; };
+		6A5238E62A3CAF850035F8ED /* PeopleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleResponse.swift; sourceTree = "<group>"; };
+		6A5238E92A3CB01A0035F8ED /* PlanetsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsResponse.swift; sourceTree = "<group>"; };
+		6A5238EE2A3CB1320035F8ED /* StarshipsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsResponse.swift; sourceTree = "<group>"; };
+		6A5238F12A3CB15D0035F8ED /* SpeciesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesResponse.swift; sourceTree = "<group>"; };
 		6AADD1D62975FDDD003D9982 /* StarWarsProjectApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsProjectApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AADD1D92975FDDD003D9982 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AADD1DB2975FDDD003D9982 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +50,6 @@
 		6AADD1ED297751E5003D9982 /* HomeContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContactsViewController.swift; sourceTree = "<group>"; };
 		6AADD1F029775275003D9982 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		6AADD1F529775359003D9982 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		6AADD1F72977FFA8003D9982 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		6AADD1FA29780329003D9982 /* NetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
 		6AADD1FC297897F9003D9982 /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
 		6AADD20029789845003D9982 /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
@@ -67,6 +75,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A5238E22A3CADB20035F8ED /* Films */ = {
+			isa = PBXGroup;
+			children = (
+				6A5238E32A3CAF3B0035F8ED /* FilmsResponse.swift */,
+			);
+			path = Films;
+			sourceTree = "<group>";
+		};
+		6A5238E52A3CAF6E0035F8ED /* People */ = {
+			isa = PBXGroup;
+			children = (
+				6A5238E62A3CAF850035F8ED /* PeopleResponse.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		6A5238E82A3CB0060035F8ED /* Planets */ = {
+			isa = PBXGroup;
+			children = (
+				6A5238E92A3CB01A0035F8ED /* PlanetsResponse.swift */,
+			);
+			path = Planets;
+			sourceTree = "<group>";
+		};
+		6A5238ED2A3CB1190035F8ED /* Starships */ = {
+			isa = PBXGroup;
+			children = (
+				6A5238EE2A3CB1320035F8ED /* StarshipsResponse.swift */,
+			);
+			path = Starships;
+			sourceTree = "<group>";
+		};
+		6A5238F02A3CB14B0035F8ED /* Species */ = {
+			isa = PBXGroup;
+			children = (
+				6A5238F12A3CB15D0035F8ED /* SpeciesResponse.swift */,
+			);
+			path = Species;
+			sourceTree = "<group>";
+		};
+		6A5238F32A3CB1790035F8ED /* CategoryHome */ = {
+			isa = PBXGroup;
+			children = (
+				6AADD1F529775359003D9982 /* Category.swift */,
+			);
+			path = CategoryHome;
+			sourceTree = "<group>";
+		};
 		6AADD1CD2975FDDD003D9982 = {
 			isa = PBXGroup;
 			children = (
@@ -117,8 +173,12 @@
 		6AADD1F229775317003D9982 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6AADD1F529775359003D9982 /* Category.swift */,
-				6AADD1F72977FFA8003D9982 /* APIResponse.swift */,
+				6A5238F32A3CB1790035F8ED /* CategoryHome */,
+				6A5238F02A3CB14B0035F8ED /* Species */,
+				6A5238ED2A3CB1190035F8ED /* Starships */,
+				6A5238E22A3CADB20035F8ED /* Films */,
+				6A5238E52A3CAF6E0035F8ED /* People */,
+				6A5238E82A3CB0060035F8ED /* Planets */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,18 +314,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A5238EF2A3CB1320035F8ED /* StarshipsResponse.swift in Sources */,
+				6A5238E42A3CAF3B0035F8ED /* FilmsResponse.swift in Sources */,
 				6AADD22429834341003D9982 /* SpeciesTableViewCell.swift in Sources */,
 				6AADD1EE297751E5003D9982 /* HomeContactsViewController.swift in Sources */,
 				6AADD1F129775275003D9982 /* HomeTableViewCell.swift in Sources */,
+				6A5238F22A3CB15D0035F8ED /* SpeciesResponse.swift in Sources */,
 				6AADD218297EA024003D9982 /* PlanetsViewController.swift in Sources */,
 				6AADD1DE2975FDDD003D9982 /* ViewController.swift in Sources */,
 				6AADD21F297F3D18003D9982 /* StarshipViewController.swift in Sources */,
 				6AADD1F629775359003D9982 /* Category.swift in Sources */,
+				6A5238E72A3CAF850035F8ED /* PeopleResponse.swift in Sources */,
 				6AADD1FD297897F9003D9982 /* FilmsViewController.swift in Sources */,
 				6AADD20E297B5082003D9982 /* PeopleViewController.swift in Sources */,
 				6AADD21D297F3CEF003D9982 /* StarshipTableViewCell.swift in Sources */,
 				6AADD1FB29780329003D9982 /* NetWorkManager.swift in Sources */,
-				6AADD1F82977FFA8003D9982 /* APIResponse.swift in Sources */,
+				6A5238EA2A3CB01A0035F8ED /* PlanetsResponse.swift in Sources */,
 				6AADD210297B509B003D9982 /* PeopleTableViewCell.swift in Sources */,
 				6AADD2082978C811003D9982 /* FormatDate+Extension.swift in Sources */,
 				6AADD1DA2975FDDD003D9982 /* AppDelegate.swift in Sources */,

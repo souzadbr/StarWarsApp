@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(homeTableView)
-        view.backgroundColor = UIColor(cgColor: .init(red: 1, green: 1, blue: 1, alpha: 1))
+        view.backgroundColor = .systemGray
         homeTableView.backgroundColor = .clear
         //Faz parte do Segundo passo:
         //Informar ao TableView de contatos onde seus métodos de protocolo de fonte de dados são implementados, neste caso, contactsViewController e em outras palavras, self.
