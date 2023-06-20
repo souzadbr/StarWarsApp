@@ -13,18 +13,21 @@ struct Film: Codable {
     let title: String
     let episodeId: Int
     let openingCrawl: String
+    let imageName: String?
     
     
     enum CodingKeys: String, CodingKey {
         case title
         case episodeId = "episode_id"
         case openingCrawl = "opening_crawl"
+        case imageName
     }
     
-    init(title: String, episodeId: Int,openingCrawl: String) {
+    init(title: String, episodeId: Int,openingCrawl: String, imageName: String) {
         self.title = title
         self.episodeId = episodeId
         self.openingCrawl = openingCrawl
+        self.imageName = imageName
     }
 }
 

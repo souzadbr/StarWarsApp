@@ -9,12 +9,25 @@ import UIKit
 
 final class FilmTableViewCell: UITableViewCell {
     
-
+    
     //propriedade nameLAbel que é responsavel por mostrar o titulo no topo de cada célula.
+    
+    let filmImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        imageView.layer.shadowColor = UIColor.black.cgColor
+        imageView.layer.shadowOpacity = 0.8
+        imageView.layer.shadowOffset = CGSize(width: 5, height: 5)
+        imageView.layer.shadowRadius = 4
+        imageView.layer.masksToBounds = false
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
     let titlleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.textColor = UIColor(cgColor: .init(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
+        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
         return label
     } ()
@@ -22,7 +35,7 @@ final class FilmTableViewCell: UITableViewCell {
     let episodeLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.textColor = UIColor(cgColor: .init(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
+        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
         return label
     } ()
@@ -31,50 +44,59 @@ final class FilmTableViewCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 16)
         label.numberOfLines = 50
-        label.textColor = UIColor(cgColor: .init(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
+        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
         return label
     } ()
- 
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        contentView.backgroundColor = .clear
-
+        self.contentView.backgroundColor = UIColor(cgColor: .init(red: 0.8, green: 0.8, blue: 0.8, alpha: 1))
+        
+        self.contentView.addSubview(filmImageView)
         self.contentView.addSubview(titlleLabel)
         self.contentView.addSubview(episodeLabel)
         self.contentView.addSubview(openingCrawlLabel)
-
-        applyContraints()
+        
+        applyConstraints()
+        
+        // Adicionando efeito de sombra
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 2)
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowRadius = 4
+        self.layer.masksToBounds = false
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    func applyContraints() {
-        //titlleLabel
+    func applyConstraints() {
+        let stackView = UIStackView(arrangedSubviews: [filmImageView, titlleLabel, episodeLabel, openingCrawlLabel])
+        stackView.axis = .vertical
+        stackView.distribution = .fill
+        stackView.spacing = 3 // Ajuste o valor do espaçamento aqui
+        stackView.translatesAutoresizingMaskIntoConstraints = false
         
-        titlleLabel.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 40).isActive = true
-        titlleLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 30).isActive = true
+        contentView.addSubview(stackView)
         
-        //episodeLabel
-        episodeLabel.topAnchor.constraint(equalTo: self.titlleLabel.topAnchor, constant: 50).isActive = true
-        episodeLabel.leadingAnchor.constraint(equalTo: self.titlleLabel.leadingAnchor).isActive = true
-        episodeLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
-        
-        //openingCrawlLabel
-        openingCrawlLabel.topAnchor.constraint(equalTo: self.episodeLabel.topAnchor, constant: 20).isActive = true
-        openingCrawlLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 25).isActive = true
-        openingCrawlLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: 15).isActive = true
-       
-        
-}
+        NSLayoutConstraint.activate([
+            stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
+            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
+            filmImageView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.3) // Ajuste a altura da imagem conforme necessário
+        ])
+    }
     
-    func updateCell(with film: Film) {
-        titlleLabel.text = "Film: \(film.title)"
-        episodeLabel.text = "Episode: \(film.episodeId)"
-        openingCrawlLabel.text =  film.openingCrawl
-
+    func updateCell(with film: Film?, image: UIImage) {
+        titlleLabel.text = "Film: \(film?.title ?? "")"
+        episodeLabel.text = "Episode: \(film?.episodeId ?? 0)"
+        openingCrawlLabel.text = film?.openingCrawl
+        filmImageView.image = image
+        
+        layoutIfNeeded()
     }
 }
 

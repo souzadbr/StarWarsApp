@@ -11,6 +11,14 @@ import UIKit
 class FilmsViewController: UIViewController {
     
     let network = NetworkManager()
+    var images: [UIImage] = [
+        UIImage(named: "NewHope")!,
+        UIImage(named: "Empire")!,
+        UIImage(named: "ReturnOfJedi")!,
+        UIImage(named: "ThePathon")!,
+        UIImage(named: "Clones")!,
+        UIImage(named: "Revenge")!
+    ]
     var films: [Film]? = [] {
         didSet {
             DispatchQueue.main.async {
@@ -54,8 +62,15 @@ class FilmsViewController: UIViewController {
     }
     
     func getDataFilm() {
-        network.fetchFilms { (films) in
-            self.films = films
+        network.fetchFilms { [weak self] films in
+            self?.films = films
+            
+            // Carregar as imagens correspondentes aos filmes
+            for film in films {
+                if let imageName = film.imageName, let image = UIImage(named: imageName) {
+                    self?.images.append(image)
+                }
+            }
         }
     }
 }
@@ -75,17 +90,17 @@ extension FilmsViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "filmCell", for: indexPath) as? FilmTableViewCell else {
             fatalError("Issue dequeuing filmCell ")
           }
-        cell.updateCell(with: films?[indexPath.row] ?? Film(title: "Deu Errado", episodeId: 1, openingCrawl: "a chamada"))
-            
+        
+        let film = films?[indexPath.row]
+        cell.updateCell(with: film, image: images[indexPath.row])
+
             return cell
         }
     }
-    
-
 
 extension FilmsViewController: UITableViewDelegate {
     //Funcao usada para dar altura na célula
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 520
+        return 800
     }
 }

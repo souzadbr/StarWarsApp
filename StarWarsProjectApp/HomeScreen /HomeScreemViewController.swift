@@ -9,6 +9,8 @@ import UIKit
 
 class HomeScreenViewController: UIViewController {
     
+    
+    
     private let backgroundImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "homeScreen")
@@ -19,7 +21,7 @@ class HomeScreenViewController: UIViewController {
     
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Star.. o que?!"
+        label.text = "Star... what??!"
         label.textAlignment = .center
         label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: 35)
@@ -29,7 +31,7 @@ class HomeScreenViewController: UIViewController {
     
     private let enterButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Entrar", for: .normal)
+        button.setTitle("Sign in", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         button.backgroundColor = .white
         button.setTitleColor(.black, for: .normal)
