@@ -28,6 +28,7 @@ final class FilmTableViewCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 18)
         label.textColor = .black
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
         return label
     } ()
@@ -36,6 +37,7 @@ final class FilmTableViewCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 18)
         label.textColor = .black
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
         return label
     } ()
@@ -45,6 +47,7 @@ final class FilmTableViewCell: UITableViewCell {
         label.font = UIFont.boldSystemFont(ofSize: 16)
         label.numberOfLines = 50
         label.textColor = .black
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
         return label
     } ()

@@ -15,11 +15,12 @@ class PeopleViewController: UIViewController {
         didSet {
             DispatchQueue.main.async {
                 self.peopleTableView.reloadData()
-                print ("Carregando")
+                self.hideLoadingView()
             }
         }
     }
     
+    let loadingView = LoadingView()
     let peopleTableView = UITableView() // view
     
     override func viewDidLoad() {
@@ -36,6 +37,7 @@ class PeopleViewController: UIViewController {
         view.backgroundColor = UIColor(cgColor: .init(red: 1, green: 1, blue: 1, alpha: 1))
         setUpNavigation()
         applyContraints()
+        showLoadingView()
         getDataPeople()
     }
     
@@ -60,7 +62,26 @@ class PeopleViewController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(cgColor: .init(red: 0, green: 0, blue: 0, alpha: 1))]
     }
     
+    func showLoadingView() {
+        // Add the loading view as a subview and start animating the activity indicator
+        view.addSubview(loadingView)
+        loadingView.startAnimating()
+        
+        NSLayoutConstraint.activate([
+            loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+    }
+    
+    func hideLoadingView() {
+        // Remove the loading view from the superview and stop animating the activity indicator
+        loadingView.removeFromSuperview()
+        loadingView.stopAnimating()
+    }
+    
     func getDataPeople() {
+        showLoadingView()
+        
         network.fetchPeople { (people) in
             self.people = people
         }

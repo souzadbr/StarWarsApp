@@ -8,7 +8,7 @@
 import UIKit
 
 class SpeciesTableViewCell: UITableViewCell {
-
+    
     let nameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 18)
@@ -56,5 +56,5 @@ class SpeciesTableViewCell: UITableViewCell {
         nameLabel.text = "Name: \(specie.name)"
         languageLabel.text = "Language: \(specie.language)"
     }
-
+    
 }

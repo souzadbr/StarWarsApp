@@ -80,7 +80,7 @@ extension HomeViewController: UITableViewDelegate {
         
         let category = categories[indexPath.row]
         let viewController: UIViewController
-       
+        
         
         switch category {
         case .films: viewController = FilmsViewController()

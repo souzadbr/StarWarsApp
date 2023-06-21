@@ -7,50 +7,50 @@
 
 import UIKit
 
- class PeopleTableViewCell: UITableViewCell {
+class PeopleTableViewCell: UITableViewCell {
     
     
     //propriedade nameLAbel que é responsavel por mostrar o titulo no topo de cada célula.
-     let nameLabel: UILabel = {
+    let nameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 18)
         label.textColor = UIColor(cgColor: .init(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
         label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
         return label
     } ()
-     
-     let heightLabel: UILabel = {
-         let label = UILabel()
-         label.font = UIFont.boldSystemFont(ofSize: 16)
-         label.textColor = UIColor(cgColor: .init(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
-         label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
-         return label
-     } ()
-     
-     let hairColorLabel: UILabel = {
-         let label = UILabel()
-         label.font = UIFont.boldSystemFont(ofSize: 16)
-         label.textColor = UIColor(cgColor: .init(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
-         label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
-         return label
-     } ()
     
-     let skinColorLabel: UILabel = {
-         let label = UILabel()
-         label.font = UIFont.boldSystemFont(ofSize: 16)
-         label.textColor = UIColor(cgColor: .init(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
-         label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
-         return label
-     } ()
-     
-     let genderLabel: UILabel = {
-         let label = UILabel()
-         label.font = UIFont.boldSystemFont(ofSize: 16)
-         label.textColor = UIColor(cgColor: .init(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
-         label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
-         return label
-     } ()
-     
+    let heightLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.textColor = UIColor(cgColor: .init(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
+        label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
+        return label
+    } ()
+    
+    let hairColorLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.textColor = UIColor(cgColor: .init(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
+        label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
+        return label
+    } ()
+    
+    let skinColorLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.textColor = UIColor(cgColor: .init(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
+        label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
+        return label
+    } ()
+    
+    let genderLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.textColor = UIColor(cgColor: .init(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
+        label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
+        return label
+    } ()
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.backgroundColor = .clear

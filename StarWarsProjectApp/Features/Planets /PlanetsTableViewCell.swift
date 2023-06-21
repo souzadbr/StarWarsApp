@@ -8,7 +8,7 @@
 import UIKit
 
 class PlanetsTableViewCell: UITableViewCell {
-
+    
     
     let nameLabel: UILabel = {
         let label = UILabel()
@@ -23,7 +23,7 @@ class PlanetsTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.backgroundColor = .clear
         self.contentView.addSubview(nameLabel)
-
+        
         applyContraints()
     }
     
@@ -36,12 +36,12 @@ class PlanetsTableViewCell: UITableViewCell {
         
         nameLabel.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 40).isActive = true
         nameLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 30).isActive = true
-
-}
+        
+    }
     
     func updateCell(with planet: Planet) {
         nameLabel.text = "Planet: \(planet.name)"
         
     }
-
+    
 }

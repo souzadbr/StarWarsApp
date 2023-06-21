@@ -23,7 +23,7 @@ final class HomeTableViewCell: UITableViewCell {
     //propriedade nameLAbel que é responsavel por mostrar o titulo no topo de cada célula.
     let nameLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 18)
+        label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textColor = UIColor(cgColor: .init(red: 0, green: 0, blue: 0, alpha: 1))
         label.translatesAutoresizingMaskIntoConstraints = false // ativa o layout automático
         return label

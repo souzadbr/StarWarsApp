@@ -19,15 +19,17 @@ class FilmsViewController: UIViewController {
         UIImage(named: "Clones")!,
         UIImage(named: "Revenge")!
     ]
+    
     var films: [Film]? = [] {
         didSet {
             DispatchQueue.main.async {
                 self.filmTableView.reloadData()
-                print("Carregando")
+                self.hideLoadingView()
             }
         }
     }
-   
+    
+    let loadingView = LoadingView()
     let filmTableView = UITableView() // view
     
     override func viewDidLoad() {
@@ -39,6 +41,7 @@ class FilmsViewController: UIViewController {
         view.backgroundColor = UIColor(cgColor: .init(red: 1, green: 1, blue: 1, alpha: 1))
         applyContraints()
         setUpNavigation()
+        showLoadingView()
         getDataFilm()
         
     }
@@ -61,7 +64,26 @@ class FilmsViewController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(cgColor: .init(red: 0, green: 0, blue: 0, alpha: 1))]
     }
     
+    func showLoadingView() {
+        // Add the loading view as a subview and start animating the activity indicator
+        view.addSubview(loadingView)
+        loadingView.startAnimating()
+        
+        NSLayoutConstraint.activate([
+            loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+    }
+    
+    func hideLoadingView() {
+        // Remove the loading view from the superview and stop animating the activity indicator
+        loadingView.removeFromSuperview()
+        loadingView.stopAnimating()
+    }
+    
     func getDataFilm() {
+        showLoadingView()
+        
         network.fetchFilms { [weak self] films in
             self?.films = films
             
@@ -89,14 +111,14 @@ extension FilmsViewController: UITableViewDataSource {
         //faz o resuso de celula formatada em contactCell retornando uma celula formatada.
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "filmCell", for: indexPath) as? FilmTableViewCell else {
             fatalError("Issue dequeuing filmCell ")
-          }
+        }
         
         let film = films?[indexPath.row]
         cell.updateCell(with: film, image: images[indexPath.row])
-
-            return cell
-        }
+        
+        return cell
     }
+}
 
 extension FilmsViewController: UITableViewDelegate {
     //Funcao usada para dar altura na célula

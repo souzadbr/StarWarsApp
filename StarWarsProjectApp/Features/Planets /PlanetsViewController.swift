@@ -8,18 +8,19 @@
 import UIKit
 
 class PlanetsViewController: UIViewController {
-
+    
     
     let network = NetworkManager()
     var planets: [Planet]? = [] {
         didSet {
             DispatchQueue.main.async {
                 self.planetTableView.reloadData()
-        
+                self.hideLoadingView()
             }
         }
     }
     
+    let loadingView = LoadingView()
     let planetTableView = UITableView()
     
     override func viewDidLoad() {
@@ -31,6 +32,7 @@ class PlanetsViewController: UIViewController {
         view.backgroundColor = UIColor(cgColor: .init(red: 1, green: 1, blue: 1, alpha: 1))
         applyContraints()
         setUpNavigation()
+        showLoadingView()
         getDataPlanet()
     }
     
@@ -50,7 +52,26 @@ class PlanetsViewController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(cgColor: .init(red: 0, green: 0, blue: 0, alpha: 1 ))]
     }
     
+    func showLoadingView() {
+        // Add the loading view as a subview and start animating the activity indicator
+        view.addSubview(loadingView)
+        loadingView.startAnimating()
+        
+        NSLayoutConstraint.activate([
+            loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+    }
+    
+    func hideLoadingView() {
+        // Remove the loading view from the superview and stop animating the activity indicator
+        loadingView.removeFromSuperview()
+        loadingView.stopAnimating()
+    }
+    
     func getDataPlanet() {
+        showLoadingView()
+        
         network.fetchPlanets { (planets) in
             self.planets = planets
             
