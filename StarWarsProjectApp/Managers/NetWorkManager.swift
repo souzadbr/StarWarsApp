@@ -41,7 +41,6 @@ final class NetworkManager{
     }
     
     //MARK: fetchPeople
-    
     func fetchPeople(completionHandler: @escaping ([Person])-> Void) {
         
         let url = URL(string: domainURLString + "people/")!
@@ -65,7 +64,6 @@ final class NetworkManager{
     }
     
     //MARK: fetchPlanets
-    
     func fetchPlanets(completionHandler: @escaping ([Planet])-> Void) {
         
         let url = URL(string: domainURLString + "planets/")!
@@ -89,7 +87,6 @@ final class NetworkManager{
     }
     
     //MARK: fetchStarships
-    
     func fetchStarship(completionHandler: @escaping ([Starship])-> Void) {
         
         let url = URL(string: domainURLString + "starships/")!
@@ -113,7 +110,6 @@ final class NetworkManager{
     }
     
     //MARK: fetchSpecies
-    
     func fetchSpecies(completionHandler: @escaping ([Specie])-> Void) {
         
         let url = URL(string: domainURLString + "species/")!

@@ -16,11 +16,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let homeScreenViewController = HomeScreenViewController()
+        let splashViewController = SplashViewController()
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         //Defina ContactsViewController como um controlador de visualização raiz de UINavigationController.
-        window?.rootViewController = UINavigationController(rootViewController: homeScreenViewController)
+        window?.rootViewController = UINavigationController(rootViewController: splashViewController)
         window?.makeKeyAndVisible()
     }
 

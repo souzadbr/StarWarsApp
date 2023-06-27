@@ -8,7 +8,6 @@
 import Foundation
 
 //MARK: - Starships
-
 struct Starship: Codable {
     let name: String
     let model: String
