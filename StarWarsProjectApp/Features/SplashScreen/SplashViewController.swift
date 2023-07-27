@@ -16,7 +16,7 @@ class SplashViewController: UIViewController {
         super.viewDidLoad()
         
         nameLabel.frame = CGRect(x: view.bounds.midX - 100, y: view.bounds.midY - 200, width: 200, height: 90)
-        nameLabel.text = "Star..whats?!"
+        nameLabel.text = "Star..what?!"
         nameLabel.textAlignment = .center
         nameLabel.font = UIFont.boldSystemFont(ofSize: 32)
         nameLabel.textColor = .white

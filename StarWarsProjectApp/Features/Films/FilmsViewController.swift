@@ -11,14 +11,6 @@ import UIKit
 class FilmsViewController: UIViewController {
     
     let network = NetworkManager()
-    var images: [UIImage] = [
-        UIImage(named: "NewHope")!,
-        UIImage(named: "Empire")!,
-        UIImage(named: "ReturnOfJedi")!,
-        UIImage(named: "ThePathon")!,
-        UIImage(named: "Clones")!,
-        UIImage(named: "Revenge")!
-    ]
     
     var films: [Film]? = [] {
         didSet {
@@ -86,16 +78,9 @@ class FilmsViewController: UIViewController {
         
         network.fetchFilms { [weak self] films in
             self?.films = films
-            
-            // Carregar as imagens correspondentes aos filmes
-            for film in films {
-                if let imageName = film.imageName, let image = UIImage(named: imageName) {
-                    self?.images.append(image)
-                }
             }
         }
     }
-}
 
 extension FilmsViewController: UITableViewDataSource {
     
@@ -114,7 +99,7 @@ extension FilmsViewController: UITableViewDataSource {
         }
         
         let film = films?[indexPath.row]
-        cell.updateCell(with: film, image: images[indexPath.row])
+        cell.updateCell(with: film)
         
         return cell
     }
